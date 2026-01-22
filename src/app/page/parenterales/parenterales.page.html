@@ -1,129 +1,85 @@
 <ion-header class="ion-no-border">
   <ion-toolbar color="primary">
     <ion-buttons slot="start">
-      <ion-button id="menu-trigger" class="menu-btn">
-  MENÚ <ion-icon slot="end" name="caret-down-sharp"></ion-icon>
-</ion-button>
-
-<ion-popover trigger="menu-trigger" dismiss-on-select="true">
-  <ng-template>
-    <ion-content class="ion-no-padding">
-      <ion-list lines="none">
-        <ion-item button routerLink="/inicio" detail="false">
-          <ion-label>Inicio</ion-label>
-        </ion-item>
-        <ion-item button routerLink="/parenterales" detail="false">
-          <ion-label>Vías Parenterales</ion-label>
-        </ion-item>
-        <ion-item button routerLink="/intradermica" detail="false">
-          <ion-label>Vía Intradérmica</ion-label>
-        </ion-item>
-      </ion-list>
-    </ion-content>
-  </ng-template>
-</ion-popover>
+      <ion-back-button defaultHref="/home" text="Atrás"></ion-back-button>
     </ion-buttons>
-    <div class="header-content ion-text-center">
-      <h1>Vias Parenterales</h1>
-      <p>Aprende de forma interactiva los tipos, técnicas y cuidados.</p>
-    </div>
+    
+    <ion-title class="ion-text-center">Vía Intramuscular</ion-title>
+    
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="caret-down-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" class="ion-padding">
+<ion-content [fullscreen]="true">
 
-  <section class="info-section">
-    <div class="title-wrapper">
-      <div class="vertical-bar"></div>
-      <h2>¿Qué son las vías parenterales?</h2>
-    </div>
-    <p class="description-text">
-      Son métodos de administración de medicamentos mediante inyección directa, evitando el sistema digestivo. Se utilizan para una acción rápida, precisión en la dosis o cuando el paciente no puede ingerir medicamentos por vía oral.
-    </p>
-  </section>
-
-  <section class="types-section">
-    <h2 class="centered-title">Tipos de vias parenterales</h2>
-    
-    <ion-grid>
-      <ion-row>
-        <ion-col size="6" size-md="3">
-          <div class="img-card" style="background-image: url('assets/images/intradermica.jpg');">
-            <div class="card-overlay">
-              <span>Vía Intradérmica</span>
-            </div>
-          </div>
-        </ion-col>
-        <ion-col size="6" size-md="3">
-          <div class="img-card" style="background-image: url('assets/images/subcutanea.jpg');">
-            <div class="card-overlay">
-              <span>Vía Subcutánea</span>
-            </div>
-          </div>
-        </ion-col>
-        <ion-col size="6" size-md="3">
-  <div class="img-card clickable-card" 
-       routerLink="/intramuscular" 
-       style="background-image: url('assets/images/intramuscular.jpg'); cursor: pointer;">
-    <div class="card-overlay">
-      <span>Vía Intramuscular</span>
+  <div class="hero-section">
+    <div class="hero-content">
+      <div class="title-accent">
+        <h1>¿Qué es?</h1>
+      </div>
+      <p>
+        La vía intramuscular es una forma de administración de medicamentos en la que el fármaco se deposita directamente en el tejido muscular profundo, es decir, en la capa que se encuentra por debajo de la dermis y del tejido subcutáneo (grasa).
+        <br><br>
+        Se utiliza principalmente para la administración de vacunas, antibióticos y analgésicos que requieren una absorción rápida o para fármacos irritantes en capas más superficial.
+      </p>
     </div>
   </div>
-</ion-col>
-        <ion-col size="6" size-md="3">
-          <div class="img-card" style="background-image: url('assets/images/intravenosa.jpg');">
-            <div class="card-overlay">
-              <span>Vía Intravenosa</span>
-            </div>
-          </div>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </section>
 
-  <section class="materials-section">
-    <div class="title-wrapper">
-      <div class="vertical-bar"></div>
-      <h2>Materiales Generales</h2>
-    </div>
-
+  <div class="content-container">
     <ion-grid>
-      <ion-row class="ion-align-items-center">
-        <ion-col size="12" size-md="6">
-          <ul class="custom-list">
-            <li>Bandeja o riñonera</li>
-            <li>Guantes desechables (no estériles)</li>
-            <li>Jeringas (1 ml, 3 ml, 5 ml o 10 ml según el medicamento)</li>
-            <li>Agujas (calibre y longitud según la vía y el paciente)</li>
-            <li>Medicamento prescrito</li>
-            <li>Algodón o gasas estériles</li>
-            <li>Antiséptico (alcohol al 70 % o clorhexidina)</li>
-            <li>Recipiente para desechos cortopunzantes (guardian)</li>
-            <li>Recipiente para desechos biológicos</li>
-            <li>Etiqueta o rotulador (si se prepara previamente)</li>
+      <ion-row>
+        <ion-col size="12" size-md="6" class="info-col">
+          <h2 class="green-title">Ventajas</h2>
+          <ul>
+            <li>Permite una absorción rápida hacia la sangre</li>
+            <li>Admite volúmenes mayores (hasta 5 ml)</li>
+            <li>Es una técnica económica</li>
           </ul>
         </ion-col>
-        <ion-col size="12" size-md="6">
-          <div class="materials-img-container">
-             <img src="assets/images/materiales-collage.jpg" alt="Materiales medicos">
+
+        <ion-col size="12" size-md="6" class="info-col">
+          <h2 class="green-title">Desventajas</h2>
+          <ul>
+            <li>Es una técnica dolorosa e invasiva</li>
+            <li>Riesgo alto de lesión nerviosa o vascular</li>
+            <li>No permite revertir el efecto una vez inyectado</li>
+          </ul>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="ion-margin-top">
+        <ion-col size="12" size-md="6" class="info-col">
+          <div class="section-header">
+            <div class="bar-accent"></div>
+            <h2>Tipos de Agujas Y material</h2>
           </div>
+          
+          <div class="material-content">
+            <ul>
+              <li>Jeringa de 2 a 5 ml (generalmente)</li>
+              <li>Aguja calibre 19-23 (adultos)</li>
+            </ul>
+            <img src="assets/jeringa-vect.png" alt="Jeringa" class="floating-syringe" /> 
+          </div>
+        </ion-col>
+
+        <ion-col size="12" size-md="6" class="info-col">
+          <div class="section-header">
+            <div class="bar-accent"></div>
+            <h2>Lugares más Utilizados</h2>
+          </div>
+          <ul>
+            <li>Glúteo (Cuadrante superior externo)</li>
+            <li>Músculo deltoides (Brazo)</li>
+            <li>Vasto lateral (Muslo)</li>
+          </ul>
         </ion-col>
       </ion-row>
     </ion-grid>
-  </section>
-
-  <section class="procedures-section">
-    <div class="title-wrapper">
-      <div class="vertical-bar"></div>
-      <h2>Procedimientos Basicos</h2>
-    </div>
-    <ol class="custom-ordered-list">
-      <li>Lavado de manos</li>
-      <li>Preparación del material</li>
-      <li>Identificación del paciente</li>
-      <li>Aplicación según la vía correspondiente</li>
-      <li>Registro y monitoreo</li>
-    </ol>
-  </section>
-
+  </div>
 </ion-content>
