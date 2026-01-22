@@ -1,0 +1,96 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button id="menu-trigger" class="menu-btn">
+        MENÚ <ion-icon slot="end" name="caret-down-sharp"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Vía Intravenosa</ion-title>
+
+    <ion-popover trigger="menu-trigger" dismiss-on-select="true">
+      <ng-template>
+        <ion-content class="ion-no-padding">
+          <ion-list lines="none">
+            <ion-item button routerLink="/inicio" detail="false"><ion-label>Inicio</ion-label></ion-item>
+            <ion-item button routerLink="/parenterales" detail="false"><ion-label>Vías Parenterales</ion-label></ion-item>
+            <ion-item button routerLink="/intradermica" detail="false"><ion-label>Vía Intradérmica</ion-label></ion-item>
+            <ion-item button routerLink="/intravenosa" detail="false"><ion-label>Vía Intravenosa</ion-label></ion-item>
+          </ion-list>
+        </ion-content>
+      </ng-template>
+    </ion-popover>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="hero-container">
+    <img src="assets/images/intravenosa.jpg" alt="Vía Intravenosa" class="hero-img">
+  </div>
+
+  <div class="ion-padding">
+    <section class="info-section">
+      <div class="title-wrapper">
+        <div class="vertical-bar"></div>
+        <h2>¿Qué es?</h2>
+      </div>
+      <p class="description-text">
+        La vía intravenosa (IV) es un método de administración de medicamentos en el cual el fármaco se introduce directamente en el torrente sanguíneo, a través de una vena. Esto permite una acción inmediata, una biodisponibilidad del 100 % y un control preciso de la dosis administrada.
+      </p>
+    </section>
+
+    <ion-grid class="ion-margin-top">
+      <ion-row>
+        <ion-col size="12" size-md="6">
+          <h3 class="green-title">Ventajas</h3>
+          <ul class="custom-list">
+            <li>Acción inmediata</li>
+            <li>Dosis exacta</li>
+            <li>Útil en emergencias</li>
+            <li>Permite infusión contínua</li>
+          </ul>
+        </ion-col>
+        <ion-col size="12" size-md="6">
+          <h3 class="green-title">Desventajas</h3>
+          <ul class="custom-list">
+            <li>Riesgo elevado si hay errores</li>
+            <li>Requiere Personal capacitado</li>
+            <li>Mayor riesgo de infeccion</li>
+            <li>No apta para autoadministración</li>
+          </ul>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid class="ion-margin-top">
+      <ion-row>
+        <ion-col size="12" size-md="6">
+          <div class="title-wrapper">
+            <div class="vertical-bar"></div>
+            <h2>Tipos de Agujas Y material</h2>
+          </div>
+          <ul class="custom-list">
+            <li>Catéter intravenoso periférico (calibre 18-24 G)</li>
+            <li>Jeringa o equipo de venoclisis</li>
+          </ul>
+          <div class="material-img-container ion-text-center">
+            <img src="assets/images/iv-material.jpg" alt="Agujas IV">
+          </div>
+        </ion-col>
+
+        <ion-col size="12" size-md="6">
+          <div class="title-wrapper">
+            <div class="vertical-bar"></div>
+            <h2>Lugares mas Utilizados</h2>
+          </div>
+          <ul class="custom-list">
+            <li>Venas del dorso de la mano</li>
+            <li>Venas del antebrazo</li>
+            <li>Vena cefálica</li>
+            <li>Vena basílica</li>
+            <li>Pliegue antecubital (uso temporal)</li>
+          </ul>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

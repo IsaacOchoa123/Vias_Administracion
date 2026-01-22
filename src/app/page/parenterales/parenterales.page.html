@@ -11,7 +11,6 @@
         <ion-icon name="caret-down-outline"></ion-icon>
       </ion-button>
     </ion-buttons>
-    
   </ion-toolbar>
 </ion-header>
 
@@ -29,6 +28,62 @@
       </p>
     </div>
   </div>
+
+  <section class="info-section">
+    <div class="title-wrapper">
+      <div class="vertical-bar"></div>
+      <h2>¿Qué son las vías parenterales?</h2>
+    </div>
+    <p class="description-text">
+      Son métodos de administración de medicamentos mediante inyección directa, evitando el sistema digestivo. Se utilizan para una acción rápida, precisión en la dosis o cuando el paciente no puede ingerir medicamentos por vía oral.
+    </p>
+  </section>
+
+  <section class="types-section">
+    <h2 class="centered-title">Tipos de vias parenterales</h2>
+    
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6" size-md="3">
+          <div class="img-card clicklabe card " routerLink="/intradermica" style="background-image: url('assets/images/intradermica.jpg');">
+            <div class="card-overlay">
+              <span>Vía Intradérmica</span>
+            </div>
+          </div>
+        </ion-col>
+        <ion-col size="6" size-md="3">
+          <div class="img-card" style="background-image: url('assets/images/subcutanea.jpg');">
+            <div class="card-overlay">
+              <span>Vía Subcutánea</span>
+            </div>
+          </div>
+        </ion-col>
+        <ion-col size="6" size-md="3">
+          <div class="img-card clickable-card" 
+               routerLink="/intramuscular" 
+               style="background-image: url('assets/images/intramuscular.jpg'); cursor: pointer;">
+            <div class="card-overlay">
+              <span>Vía Intramuscular</span>
+            </div>
+          </div>
+        </ion-col>
+        <ion-col size="6" size-md="3">
+          <div class="img-card clicklabe card " routerLink="/intravenosa" style="background-image: url('assets/images/intravenosa.jpg');">
+            <div class="card-overlay">
+              <span>Vía Intravenosa</span>
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </section>
+
+  <section class="materials-section">
+    <div class="title-wrapper">
+      <div class="vertical-bar"></div>
+      <h2>Materiales Generales</h2>
+    </div>
+    </section>
 
   <div class="content-container">
     <ion-grid>

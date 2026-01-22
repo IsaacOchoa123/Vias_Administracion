@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+
 // 1. Asegúrate de importar los componentes de Ionic aquí
+
 import { 
   IonContent, 
   IonHeader, 

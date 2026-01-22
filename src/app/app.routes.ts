@@ -28,4 +28,19 @@ export const routes: Routes = [
 
   }
 ];
+export const appRoutes: Routes = [
+  {
+
+    path: 'parenterales',
+    loadComponent: () => import('./page/parenterales/parenterales.page').then( m => m.ParenteralesPage)
+  },
+  {
+    path: 'intradermica',
+    loadComponent: () => import('./page/intradermica/intradermica.page').then( m => m.IntradermicaPage)
+  },
+  {
+    path: 'intravenosa',
+    loadComponent: () => import('./page/intravenosa/intravenosa.page').then( m => m.IntravenosaPage)
+  },
+];
 
